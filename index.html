@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@picocss/pico@1/css/pico.min.css">
+  <!--Font Awesome Link-->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
+  <link rel="stylesheet" href="style.css">
+  <title>Frontend Mentor | Age calculator app</title>
+</head>
+
+<body>
+  <main>
+    <div class="main--container">
+      <div class="container form--container">
+        <form action="" id="form-age-inputs">
+          <div class="form--group">
+            <label class="label--title" for="day">DAY</label>
+            <input class="input-class" type="number" id="day" placeholder="DD" required>
+          </div>
+          <div class="form--group">
+            <label class="label--title" for="month">MONTH</label>
+            <input class="input-class" type="number" id="month" placeholder="MM" required>
+          </div>
+          <div class="form--group">
+            <label class="label--title" for="year">YEAR</label>
+            <input class="input-class" type="number" id="year" placeholder="YYYY" required>
+          </div>
+          <div id="error-message"></div>
+        </form>
+      </div>
+
+      <div class="container btn--container">
+        <hr>
+        <button class="btn-calculate" id="btn-calculate"><svg xmlns="http://www.w3.org/2000/svg" width="46" height="44"
+            viewBox="0 0 46 44">
+            <g fill="none" stroke="#FFF" stroke-width="2">
+              <path d="M1 22.019C8.333 21.686 23 25.616 23 44M23 44V0M45 22.019C37.667 21.686 23 25.616 23 44" />
+            </g>
+          </svg></button>
+      </div>
+
+      <div class="container age--container">
+        <p class="display--age--p display--age--year"><span class="purple--text" id="years">--</span> years</p>
+        <p class="display--age--p display--age--month"><span class="purple--text" id="months">--</span> months</p>
+        <p class="display--age--p display--age--day"><span class="purple--text" id="days">--</span> days</p>
+      </div>
+    </div>
+  </main>
+  <script src="script.js"></script>
+</body>
+
+</html>

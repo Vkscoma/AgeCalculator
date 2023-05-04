@@ -1,0 +1,125 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+:root {
+    --light-color: #fefefe;
+    --dark-color: #333;
+    --grey-color: #ccc;
+    --dark-grey-color: #8e8e8e;
+    --primary-color: rgb(149, 62, 255);
+}
+
+body {
+    font-family: 'Poppins', sans-serif;
+    background-color: lightgray;
+    height: 100vh;
+}
+
+main {
+    height: 100%;
+}
+
+.main--container {
+    border: none;
+    border-radius: 20px 20px 200px 20px;
+    max-width: 850px;
+    margin: 0 auto;
+    background-color: #fefefe;
+}
+
+.form--container {
+    padding: 20px;
+}
+
+form {
+    display: flex;
+    gap: 1em;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.label--title {
+    font-weight: 600;
+    color: var(--dark-grey-color);
+    letter-spacing: .1em;
+}
+
+.input-class:focus {
+    box-shadow: 0 0 0 1px var(--primary-color);
+}
+
+.btn--container {
+    display: grid;
+    grid-template-columns: 1fr auto;
+    align-items: center;
+}
+
+hr {
+    border: 1px solid var(--grey-color);
+    width: 90%;
+    position: relative;
+}
+
+.btn-calculate {
+    cursor: pointer;
+    margin: 0 auto;
+    position: relative;
+    border: none;
+    border-radius: 50%;
+    right: 80%;
+    background-color: var(--primary-color);
+    color: var(--light-color);
+    padding: 20px;
+}
+
+.btn-calculate:hover {
+    background-color: rgb(149, 62, 255, 0.8);
+}
+
+.btn-calculate:active {
+    background-color: var(--dark-color);
+}
+
+.age--container {
+    padding: 0 0 20px 20px;
+}
+
+.display--age--p {
+    font-size: 4rem;
+    font-weight: bold;
+    font-style: italic;
+}
+
+.purple--text {
+    font-weight: 700;
+    color: var(--primary-color);
+}
+
+.error {
+    outline: 1px solid red;
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+@media screen and (max-width: 768px) {
+    .main--container {
+        margin: 5em auto;
+        max-width: 350px;
+        border-radius: 20px 20px 100px 20px;
+    }
+
+    .display--age--p {
+        font-size: 2.5rem;
+    }
+
+    .btn-calculate {
+        padding: 10px;
+    }
+}
