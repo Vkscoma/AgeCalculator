@@ -15,10 +15,6 @@
 body {
     font-family: 'Poppins', sans-serif;
     background-color: lightgray;
-    height: 100vh;
-}
-
-main {
     height: 100%;
 }
 
@@ -76,7 +72,7 @@ hr {
     right: 80%;
     background-color: var(--primary-color);
     color: var(--light-color);
-    padding: 20px;
+    padding: 15px;
 }
 
 .btn-calculate:hover {
@@ -92,7 +88,7 @@ hr {
 }
 
 .display--age--p {
-    font-size: 4rem;
+    font-size: 3.125rem;
     font-weight: bold;
     font-style: italic;
 }
